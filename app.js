@@ -20,6 +20,9 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 // ROUTES
+app.get("/", function(req, res){
+  res.send('I should display a file here')
+})
 app.use("/users", userRoutes)
 
 
