@@ -1,0 +1,1 @@
+Talk2me is a platform that connect people with mental health issues with professional therapists
