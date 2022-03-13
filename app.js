@@ -2,11 +2,11 @@
 const express = require('express')
 const dotenv = require('dotenv')
 // INTERNAL MODULES
-const dbconnect = require('./server/database/dbconnection')
+const dbconnect = require("./dbconnection")
 const userRoutes=require("./routes/user")
 
 // LOAD CONFIG
-dotenv.config({ path: './server/config/config.env' })
+dotenv.config({ path: 'config.env' })
 
 // APP
 const app = express()

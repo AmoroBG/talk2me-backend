@@ -8,7 +8,7 @@ const User = require("../models/user");
 const { json } = require("express/lib/response");
 
 // LOAD CONFIG
-dotenv.config({ path: "../server/config/config.env" });
+dotenv.config({ path: "./config.env" });
 //Register User - /users/user/register - POST
 exports.registerUser = function (req, res) {
   // check if email already exist
