@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 
 // LOAD CONFIG
 dotenv.config({
-  path: path.resolve(__dirname, '../config/config.env'),
+  path: path.resolve(__dirname, './config.env'),
 })
 
 // Connecting to Database
