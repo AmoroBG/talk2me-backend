@@ -8,6 +8,7 @@ body{
     background-color: #eee;
     color: #333;
     line-height: 1.5rem;
+    overflow-x: hidden;
 }
 h1{
     text-align: center;
@@ -63,6 +64,7 @@ ul.menu-items{
 @media only screen and (max-width: 600px) {
     .container{
 width: 100%;
+padding: 0 2rem;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
