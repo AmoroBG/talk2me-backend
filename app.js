@@ -6,14 +6,13 @@ const dotenv = require('dotenv')
 const dbconnect = require("./dbconnection")
 const userRoutes=require("./routes/user")
 
-// STATIC FILES
-app.use(express.static(path.join(__dirname, 'public')))
-
 // LOAD CONFIG
 dotenv.config({ path: 'config.env' })
 
-// APP
+// INITIALIZE APP
 const app = express()
+// STATIC FILES
+app.use(express.static(path.join(__dirname, 'public')))
 
 // DB CONNECTION
 dbconnect
