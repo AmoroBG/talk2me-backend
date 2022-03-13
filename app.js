@@ -1,9 +1,13 @@
 // REQUIRE PACKAGES
 const express = require('express')
+const path=require("path")
 const dotenv = require('dotenv')
 // INTERNAL MODULES
 const dbconnect = require("./dbconnection")
 const userRoutes=require("./routes/user")
+
+// STATIC FILES
+app.use(express.static(path.join(__dirname, 'public')))
 
 // LOAD CONFIG
 dotenv.config({ path: 'config.env' })
@@ -21,7 +25,7 @@ app.use(express.json())
 
 // ROUTES
 app.get("/", function(req, res){
-  res.send('I should display a file here')
+  res.sendFile("index.html")
 })
 app.use("/users", userRoutes)
 
